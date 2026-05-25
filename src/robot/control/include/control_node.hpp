@@ -26,7 +26,7 @@ private:
 
   double lookahead_distance_ = 1.0;
   double goal_tolerance_ = 0.5;
-  double linear_speed_ = 0.5;
+  double linear_speed_ = 1.0;
 
   void controlLoop();
   std::optional<geometry_msgs::msg::PoseStamped> findLookaheadPoint();

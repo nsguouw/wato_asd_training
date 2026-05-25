@@ -64,7 +64,7 @@ std::vector<CellIndex> PlannerNode::runAStar(CellIndex start, CellIndex goal) {
 
   auto isObstacle = [&](int x, int y) {
     int idx = y * width + x;
-    return current_map_.data[idx] > 50;
+    return current_map_.data[idx] > 20;
   };
 
   std::priority_queue<AStarNode, std::vector<AStarNode>, CompareF> open_set;

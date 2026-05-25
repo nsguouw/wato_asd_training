@@ -25,9 +25,9 @@ private:
 
   // Costmap parameters
   static constexpr double RESOLUTION = 0.1;  // meters per cell
-  static constexpr int WIDTH = 100;           // cells (10m)
-  static constexpr int HEIGHT = 100;          // cells (10m)
-  static constexpr double INFLATION_RADIUS = 1.0;  // meters
+  static constexpr int WIDTH = 150;           // cells (10m)
+  static constexpr int HEIGHT = 150;          // cells (10m)
+  static constexpr double INFLATION_RADIUS = 1.5;  // meters
   static constexpr int MAX_COST = 100;
 
   std::vector<std::vector<int>> costmap_grid_;
